@@ -41,8 +41,18 @@ li a.active {
     color: white;
 }
 
+.Header{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
 .Text {
     margin-left: 300px;
     color: black;
+    max-width: 500px;
+    margin: auto;
+    font-size: 20px;
 }
+
 
