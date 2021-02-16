@@ -47,6 +47,22 @@ li a.active {
     text-align: center;
 }
 
+.Header2{
+    margin-left: 250px;
+    font-size: 22px;
+}
+
+.SubHeader{
+    margin-left: 250px;
+    font-size: 16px;
+}
+
+.Text2{
+    margin-left: 250px;
+    max-width: 600px;
+    font-size: 18px;
+}
+
 .Text {
     margin-left: 300px;
     color: black;
