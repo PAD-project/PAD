@@ -1,0 +1,48 @@
+body {
+    background-color: white;
+}
+
+.Title{
+    Color: white;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.Banner {
+    align-self: top;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 840px;
+    background-color: black;
+    float: left;
+}
+
+li a{
+    display: block;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #8a8a8a;
+
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.Text {
+    margin-left: 300px;
+    color: black;
+}
+
