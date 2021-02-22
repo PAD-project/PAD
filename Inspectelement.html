@@ -1,0 +1,40 @@
+<html lang="en">
+    <head>
+        <title> Masters of Deception</title>
+	    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+		<div class="Banner">
+			<img src="hacker-banner.jpg" width="100%" height="100">
+			<div class="Title"><h1>Masters Of Deception CtF</h1></div>
+		</div>
+		<div class="Navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Challenges.html">Challenges</a></li>
+				<li><a href="Information.html">Information</a></li>
+			</ul>
+		</div>
+		<div class="Text">
+			<h2>Challenge 1</h2>
+			<p>Find the username and password.....</p>
+      <br>
+  <form method="post" action=""  onsubmit="return checkform();">
+  <p><span style="width:180px">Username: </span><input type="text" name="Username" id='un'></p>
+  <p><span style="width:180px">Password: </span><input type="password" name="Password" id='pw'></p>
+  <input type="submit" value="SUBMIT" />
+  </form>
+  </div>
+    </body>
+    <script language="javascript">
+                   function checkform(){
+        if(document.getElementById("un").value == 'test' && document.getElementById("pw").value == 'test' ){
+            alert("Login Successful");
+            setTimeout(function() {window.location = "challenges.html" });
+        }
+        else{
+            alert("Access denied. Valid username and password is required.");
+        }
+    }
+    </script>
+</html>
