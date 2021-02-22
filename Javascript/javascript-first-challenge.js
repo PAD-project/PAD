@@ -7,12 +7,12 @@
 
 <script language="javascript">
                function checkform(){
-    if(document.getElementById("un").value == 'test' && document.getElementById("pw").value == 'test' ){
-        alert("Login Successful");
+    if(document.getElementById("un").value == 'you_found_me' && document.getElementById("pw").value == 'you_found_me' ){
+        alert("Congratulations Challenge 1 Completed!");
         setTimeout(function() {window.location = "home.html" });
     }
     else{
-        alert("Access denied. Valid username and password is required.");
+        alert("Access denied.");
     }
 }
 </script>
