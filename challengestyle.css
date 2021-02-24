@@ -1,0 +1,70 @@
+body {
+    background-color: white;
+}
+
+.Title{
+    Color: white;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.Banner {
+    align-self: top;
+    position: relative;
+}
+
+.Main{
+    margin:auto;
+    width: 60%;
+    padding:10px;
+}
+.challenges{
+    background-color:#70829D;
+    text-align: center;
+
+}
+.easy{
+    background-color:#46AD29;
+}
+.medium{
+    background-color:#E2CE0A;
+}
+.hard{
+    background-color:#F60909;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 1000px;
+    background-color: black;
+    float: left;
+}
+
+li a{
+    display: block;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #8a8a8a;
+
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.Text {
+    margin-left: 300px;
+    color: black;
+}
+
