@@ -14,7 +14,7 @@ docker build -t wsgi-backend-demo .
 
 ## Uitvoeren
 
-Vervang \<port\> met een poort naar keuze (die je pc nog vrij heeft)
+Vervang \<port\> met een poort naar keuze (die je pc nog vrij heeft). Ga hiernaa met de browser naar http://localhost:<port\>/
 ```
 docker run --rm -p <port>:80 wsgi-backend-demo
 ```
