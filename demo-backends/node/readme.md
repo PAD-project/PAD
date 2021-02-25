@@ -9,7 +9,7 @@ docker build -t node-backend-demo .
 
 ## Uitvoeren
 
-Vervang \<port\> met een poort naar keuze (die je pc nog vrij heeft). Ga hiernaa met de browser naar http://localhost:\<port\>/ en probeer de paden "/pad1", "/pad2", "/pad3" en "/pad/vul hier iets in wat je zelf wilt"
+Vervang \<port\> met een poort naar keuze (die je pc nog vrij heeft). Ga hiernaa met de browser naar http://localhost:<port\>/ en probeer de paden "/pad1", "/pad2", "/pad3" en "/pad/vul hier iets in wat je zelf wilt"
 ```
 docker run --rm -p <port>:80 node-backend-demo
 ```
