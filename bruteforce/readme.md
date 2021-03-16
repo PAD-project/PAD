@@ -1,10 +1,11 @@
-CHALLENGE 1 (EASY):
-Inspect Element - not a save way to store your password.
+<h2>CHALLENGE 1 (MEDIUM):</h2>
+<h3>Brute-force Attack (Dictionary) - Cracking the password.</h3>
 
-In this challenge you must get the login credentials trough inspecting element. In the HTML code there is a hidden encrypted script which stores the username and password in it.
-Users need to search for a decrypt tool to decrypt the encrypt script. The hint button shows examples of decrypt tools.
+In this challenge you must crack the password of the login form using a dictionary brute force attack. The brute-force attack tool you must use is called "Hydra". 
 
-When the users decrypt the script, A username and password combination can be found which are the same. 
+A link to the tool with documentation will be available on the challenge website. 
+https://github.com/scrolls5/Hydra
 
-When the user found the username and password then they can try to fill in the login form on the website. When correct a popup will tell the user he has completed challenge 1 and
-he may continue.
+In the HTML code you can find the command to start the brute-force attack.
+<code>hydra.exe -l admin -P .\passlist.txt localhost http-post-form "/bruteforce.php:username=admin&password=^PASS^&submit=Login:Wrong Password"</code>
+
