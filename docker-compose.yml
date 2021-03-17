@@ -2,29 +2,29 @@
 version: '3.3'
 
 services:
-  php:
+  website:
     build:
-      context: .
+      context: website/
       dockerfile: Dockerfile
     ports:
-      - 80:80
-    volumes:
-      - ./src:/var/www/html/
+      - 8080:80
 
   db:
-    image: mysql
+    build:
+      context: database/
+      dockerfile: Dockerfile
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ssd
     volumes:
-      - mysql-data:/var/lib/mysql
+      - ./database/data:/var/lib/mysql
 
   adminer:
     image: adminer
     restart: always
     ports:
-      - 8080:8080
+      - 8079:8080
 
 volumes:
   mysql-data:
