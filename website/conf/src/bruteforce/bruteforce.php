@@ -91,4 +91,4 @@
    }
 ?>
 
-<!-- .\hydra.exe -l admin -P .\passlist.txt localhost http-post-form "/bruteforce/bruteforce.php:username=admin&password=^PASS^&submit=Login:Wrong Password"
+<!-- .\hydra.exe -l admin -P .\passlist.txt -s 8080 localhost http-post-form "/bruteforce/bruteforce.php:username=admin&password=^PASS^&submit=Login:Wrong Password"
