@@ -147,10 +147,14 @@ h6{
     color:rgba(255,255,255,.35)!important;
     opacity:1
 }
+
+button.accordion{
+}
+
 ul{
     list-style:disc;
-    margin:0 0 2em 0;
-    padding-left:1em
+    margin:1em 0 2em 0;
+
 }
 ul li{
     padding-left:.5em
