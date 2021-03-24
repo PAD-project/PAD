@@ -8,6 +8,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8080:80
+    volumes:
+      - ./website/src:/app/public
 
   db:
     build:
