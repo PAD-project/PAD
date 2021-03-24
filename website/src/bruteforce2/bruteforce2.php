@@ -82,7 +82,7 @@
       $un=$_POST['username'];
       $pw=$_POST['password'];
 
-      if ($un=='test' && $pw=='abcd') {
+      if ($un=='admin' && $pw=='abcd') {
          echo "Correct Password";
          exit();
       }
