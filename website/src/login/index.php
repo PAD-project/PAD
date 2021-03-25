@@ -5,12 +5,13 @@ require __DIR__ . '/../api/env.php';
 session_start();
 
 // Check if user is already logged in
-if (isset($_SESSION['uid'])) {
+if (isset($_SESSION['uid']) && $_SESSION['uid'] > 0) {
 	header('Location: /challenges');
 	exit();
 }
 
 function doLogin($username, $password, $token) {
+	// CSRF check
 	if ($token !== $_SESSION['token']) {
 		http_response_code(401);
 		
@@ -20,6 +21,7 @@ function doLogin($username, $password, $token) {
 		return;
 	}
 
+	// Connect to DB
 	$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_MAIN);
 
 	if ($mysqli->connect_errno) {
@@ -31,6 +33,7 @@ function doLogin($username, $password, $token) {
 		return;
 	}
 
+	// Find user with username
 	$stmt = $mysqli->prepare('SELECT * FROM `users` WHERE `username`=?');
 
 	if (!$stmt) {
@@ -44,6 +47,7 @@ function doLogin($username, $password, $token) {
 
 	$result = $stmt->get_result()->fetch_assoc();
 
+	// Check username/password combo
 	if (!$result || $result['username'] !== $username || $result['password'] !== hash_hmac('sha512', $password, HMAC_KEY)) {
 		global $error;
 		$error = 'Username or password incorrect';
@@ -51,9 +55,12 @@ function doLogin($username, $password, $token) {
 		return;
 	}
 	
+	http_response_code(200);
+
 	$_SESSION['uid'] = $result['id'];
 
-	header('Location: /challenges');
+	// Redirect back to challenge(s)
+	header('Location: ' . (isset($_GET['ref']) ? $_GET['ref'] : '/challenges'));
 	exit();
 }
 

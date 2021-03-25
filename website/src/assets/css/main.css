@@ -232,10 +232,6 @@ ul.contact>li:first-child{
         padding:3em 2em 1em 2em
     }
 }
-.wrapper.style1{
-    background-color:#000
-    opacity: 0.5;
-}
 
 .wrapper.fullscreen{
     display:-moz-flex;
@@ -1248,3 +1244,39 @@ body.is-preload #sidebar nav ul li{
 				.wrapper.style3-alt .icon.major:before {
 					color: #953d75;
 				}
+
+.user-state {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+
+	padding: 10px;
+
+	display: none;
+
+	z-index: 100;
+}
+
+.user-state p {
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.user-state p.logout {
+	display: none;
+}
+
+.user-state:hover {
+	background: rgba(255, 255, 255, 0.2);
+
+	cursor: pointer;
+}
+
+.user-state:hover p.username {
+	display: none;
+}
+
+.user-state:hover p.logout {
+	display: block;
+}

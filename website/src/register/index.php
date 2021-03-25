@@ -5,7 +5,7 @@ require __DIR__ . '/../api/env.php';
 session_start();
 
 // Check if user is already logged in
-if (isset($_SESSION['uid'])) {
+if (isset($_SESSION['uid']) && $_SESSION['uid'] > 0) {
 	header('Location: /challenges');
 	exit();
 }
@@ -60,7 +60,7 @@ function doRegister($username, $password, $token) {
 		return;
 	}
 
-	$stmt = $mysqli->prepare('INSERT INTO `users`(`username`, `password`) VALUES (?, ?)');
+	$stmt = $mysqli->prepare('INSERT INTO `users`(`username`, `password`, `challenge`) VALUES (?, ?, 0)');
 
 	if (!$stmt) {
 		global $error;
