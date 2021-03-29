@@ -8,6 +8,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8080:80
+#    volumes:
+#      - ./website/src:/app/public
 
   db:
     build:
@@ -26,6 +28,3 @@ services:
     restart: always
     ports:
       - 8079:8080
-
-volumes:
-  mysql-data:
