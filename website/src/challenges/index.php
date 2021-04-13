@@ -163,8 +163,14 @@
 						<ul class="actions"><a href="../bruteforce2/bruteforce2.php" data-chid="4" class="button chlg-start-btn">Start</a></ul>
 					</section>
 					<section>
-						<h3>Protect your storage (IN DEVELOPMENT)</h3>
-						<p>INPUT INTEL...</p>
+						<h3>Protect your storage</h3>
+						<p>Database crack</p>
+						<button class="accordion">Intel</button>
+						<div class="panel" style="display: none;">
+							<p>Almost all of our data is stored nowadays, think of your account on a web shop, 
+								your high score in a online video game or your banking credentials.
+						 	    It’s important that this data is protected in the database it’s stored in.</p> 
+						</div>
 						<ul class="actions"><a href="ProtectYourStorage/protectyourstorage.html"
 								class="button chlg-start-btn" data-chid="5">Start</a></ul>
 					</section>
