@@ -163,16 +163,10 @@
 						<ul class="actions"><a href="../bruteforce2/bruteforce2.php" data-chid="4" class="button chlg-start-btn">Start</a></ul>
 					</section>
 					<section>
-						<h3>Protect your storage</h3>
-						<p>Database crack</p>
-						<button class="accordion">Intel</button>
-						<div class="panel" style="display: none;">
-							<p>Almost all of our data is stored nowadays, think of your account on a web shop, 
-								your high score in a online video game or your banking credentials.
-						 	    It’s important that this data is protected in the database it’s stored in.</p> 
-						</div>
-						<ul class="actions"><a href="ProtectYourStorage/protectyourstorage.html"
-								class="button chlg-start-btn" data-chid="5">Start</a></ul>
+						<h3>Calculate the answer (NOT WORKING)</h3>
+						<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
+							ultricies erat dapibus.</p>
+						<ul class="actions"><a href="generic.html" data-chid="6" class="button chlg-start-btn">Start</a></ul>
 					</section>
 				</div>
 			</div>
@@ -185,11 +179,17 @@
 					malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
 					imperdiet est velit quis lorem.</p>
 				<div class="features">
-					<section>
-						<h3>Calculate the answer (NOT WORKING)</h3>
-						<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed
-							ultricies erat dapibus.</p>
-						<ul class="actions"><a href="generic.html" data-chid="6" class="button chlg-start-btn">Start</a></ul>
+				<section>
+						<h3>Protect your storage</h3>
+						<p>Database crack</p>
+						<button class="accordion">Intel</button>
+						<div class="panel" style="display: none;">
+							<p>Almost all of our data is stored nowadays, think of your account on a web shop, 
+								your high score in a online video game or your banking credentials.
+						 	    It’s important that this data is protected in the database it’s stored in.</p> 
+						</div>
+						<ul class="actions"><a href="ProtectYourStorage/protectyourstorage.html"
+								class="button chlg-start-btn" data-chid="5">Start</a></ul>
 					</section>
 					<section>
 						<h3>Not random enough (NOT WORKING)</h3>
