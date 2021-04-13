@@ -161,7 +161,7 @@
 					<section>
 						<h3>Protect your storage (IN DEVELOPMENT)</h3>
 						<p>INPUT INTEL...</p>
-						<ul class="actions"><a href="ProtectYourStorage/protectyourstorage.html"
+						<ul class="actions"><a href="../ProtectYourStorage/protectyourstorage.html"
 								class="button chlg-start-btn" data-chid="5">Start</a></ul>
 					</section>
 				</div>
