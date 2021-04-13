@@ -1249,12 +1249,25 @@ body.is-preload #sidebar nav ul li{
 	position: fixed;
 	top: 0px;
 	right: 0px;
-
 	padding: 10px;
-
 	display: none;
-
 	z-index: 100;
+  -moz-transition:color .2s ease;
+  -webkit-transition:color .2s ease;
+  -ms-transition:color .2s ease;
+  transition:color .2s ease;
+  border:0;
+  color:rgba(255,255,255,255);
+  display:block;
+  font-size:.6em;
+  font-weight:700;
+  letter-spacing:.25em;
+  line-height:1.75;
+  outline:0;
+  padding:1.35em 0;
+  position:relative;
+  text-decoration:none;
+  text-transform:uppercase
 }
 
 .user-state p {
@@ -1268,9 +1281,8 @@ body.is-preload #sidebar nav ul li{
 }
 
 .user-state:hover {
-	background: rgba(255, 255, 255, 0.2);
+  color:rgba(255,255,255,.55)
 
-	cursor: pointer;
 }
 
 .user-state:hover p.username {
@@ -1279,4 +1291,15 @@ body.is-preload #sidebar nav ul li{
 
 .user-state:hover p.logout {
 	display: block;
+}
+
+.greenbar{
+  background: green;
+  border-radius: .2em;
+  bottom: 0;
+  content: '';
+  height: .2em;
+  position: absolute;
+  right: 0;
+  width: 100%;
 }

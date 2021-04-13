@@ -18,6 +18,13 @@
 					<li><a href="" class="scrolly">Challenges</a></li>
 					<li><a href="../whatwedo.html" class="scrolly">What we do</a></li>
 					<li><a href="../contact.html" class="scrolly">Contact</a></li>
+					<li class="scrolly">
+					<div class="user-state">
+						<p class="username">{username}</p>
+						<p class="logout">Click to log out</p>
+						<p class="greenbar">
+					</div>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -25,10 +32,7 @@
 
 	<!-- Wrapper -->
 	<div id="wrapper">
-		<div class="user-state">
-			<p class="username">{username}</p>
-			<p class="logout">Click to log out</p>
-		</div>
+
 
 		<div class="video-background">
 			<div class="video-foreground">
@@ -161,7 +165,7 @@
 					<section>
 						<h3>Protect your storage (IN DEVELOPMENT)</h3>
 						<p>INPUT INTEL...</p>
-						<ul class="actions"><a href="../ProtectYourStorage/protectyourstorage.html"
+						<ul class="actions"><a href="ProtectYourStorage/protectyourstorage.html"
 								class="button chlg-start-btn" data-chid="5">Start</a></ul>
 					</section>
 				</div>
