@@ -19,4 +19,6 @@ INSERT INTO `credentials_ENCRYPTED` (`username`, `password`) VALUES
 ('8899158445846b703defc362c35c43f0',	'59a9e477c8b5cd962746ec17f0bd2fa3'),
 ('4b93c9ac40c218a6b76c46b32e2692d1',	'272d62ef9c9dea3932df1332436911fb');
 
--- 2021-04-13 13:00:22
+CREATE USER 'beeste_bende'@'%' IDENTIFIED BY 'ikhouvantennisballen';
+GRANT SELECT ON `credentials\_ENCRYPTED`.* TO 'beeste_bende'@'%';
+-- 2021-04-13 13:33:25
