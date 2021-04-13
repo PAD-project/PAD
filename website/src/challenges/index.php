@@ -16,8 +16,8 @@
 				<ul>
 					<li><a href="/" class="scrolly">Home</a></li>
 					<li><a href="" class="scrolly">Challenges</a></li>
-					<li><a href="/whatwedo.html" class="scrolly">What we do</a></li>
-					<li><a href="/contact.html" class="scrolly">Contact</a></li>
+					<li><a href="../whatwedo.html" class="scrolly">What we do</a></li>
+					<li><a href="../contact.html" class="scrolly">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -77,7 +77,7 @@
 								can see them. You might think that encrypting this data is the solution but it’s not.
 								There are a lot of free decrypting tools available online. </p>
 						</div>
-						<ul class="actions"><a href="inspectelement/inspectelement.html" data-chid="0" class="button chlg-start-btn">Start</a></ul>
+						<ul class="actions"><a href="../inspectelement/inspectelement.html" data-chid="0" class="button chlg-start-btn">Start</a></ul>
 					</section>
 					<section>
 						<h3>You are not my boss (IN DEVELOPMENT)</h3>
@@ -140,7 +140,7 @@
 								dictionary to these programs, that is why words aren’t safe passwords. Now let’s try out
 								such a list tool.</p>
 						</div>
-						<ul class="actions"><a href="bruteforce/bruteforce.php" data-chid="3" class="button chlg-start-btn">Start</a></ul>
+						<ul class="actions"><a href="../bruteforce/bruteforce.php" data-chid="3" class="button chlg-start-btn">Start</a></ul>
 					</section>
 					<section>
 						<h3>Maybe not the best username/password</h3>
@@ -156,7 +156,7 @@
 								Finally, there are the well know lazy ones as 01234556789, abc123, Iloveyou, Dragon etc.
 								Now let us start the guessing game.</p>
 						</div>
-						<ul class="actions"><a href="bruteforce2/bruteforce2.php" data-chid="4" class="button chlg-start-btn">Start</a></ul>
+						<ul class="actions"><a href="../bruteforce2/bruteforce2.php" data-chid="4" class="button chlg-start-btn">Start</a></ul>
 					</section>
 					<section>
 						<h3>Protect your storage (IN DEVELOPMENT)</h3>

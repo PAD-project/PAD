@@ -12,7 +12,7 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="../challenges.html">Go Back</a></li>
+							<li><a href="../challenges">Go Back</a></li>
 						</ul>
 					</nav>
 				</div>
