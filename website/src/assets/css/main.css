@@ -1252,6 +1252,9 @@ body.is-preload #sidebar nav ul li{
 	padding: 10px;
 	display: none;
 	z-index: 100;
+  -moz-transition:color .2s ease;
+  -webkit-transition:color .2s ease;
+  -ms-transition:color .2s ease;
   transition:color .2s ease;
   border:0;
   color:rgba(255,255,255,255);
@@ -1277,9 +1280,9 @@ body.is-preload #sidebar nav ul li{
 	display: none;
 }
 
-.user-state:hover p {
-  color: rgba(255,255,255,0.55);
-  cursor: pointer;
+.user-state:hover {
+  color:rgba(255,255,255,.55)
+
 }
 
 .user-state:hover p.username {
