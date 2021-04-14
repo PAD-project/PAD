@@ -1,0 +1,119 @@
+<html>
+
+<head>
+	<title>Masters of Deception</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<link rel="stylesheet" href="/assets/css/dark.min.css" />
+	<link rel="icon" href="/assets/images/vendetta.png" type="image" sizes="16x16">
+</head>
+
+<body class="is-preload">
+
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="/challenges">Go Back</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<div class="video-background">
+			<div class="video-foreground">
+				<iframe
+					src="https://www.youtube.com/embed/qELSSAspRDI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"
+					frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<h2>Inspect Element</h2>
+				<p4>
+					Find the username and password...(they're the same)
+				</p4>
+				<button type="button" class="collapsible">Hint</button>
+				<div class="content">
+					<p4>Maybe this can help you... <a href="https://lelinhtinh.github.io/de4js/">de4js</a></p4>
+				</div>
+			</div>
+			<form method="post" action="" id="form">
+				<div class="input_bar">
+					<input type="text" name="Username" id="un" placeholder="Username" />
+					<input type="password" name="Password" id="pw" placeholder="Password" required />
+				</div>
+				<br />
+				<input type="submit" value="Login" class="primary" />
+			</form>
+		</section>
+	</div>
+
+	<script language="javascript">
+		var _0x82ff = ["\x63\x6F\x6C\x6C\x61\x70\x73\x69\x62\x6C\x65",
+			"\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x43\x6C\x61\x73\x73\x4E\x61\x6D\x65",
+			"\x6C\x65\x6E\x67\x74\x68", "\x63\x6C\x69\x63\x6B", "\x61\x63\x74\x69\x76\x65", "\x74\x6F\x67\x67\x6C\x65",
+			"\x63\x6C\x61\x73\x73\x4C\x69\x73\x74",
+			"\x6E\x65\x78\x74\x45\x6C\x65\x6D\x65\x6E\x74\x53\x69\x62\x6C\x69\x6E\x67", "\x64\x69\x73\x70\x6C\x61\x79",
+			"\x73\x74\x79\x6C\x65", "\x62\x6C\x6F\x63\x6B", "\x6E\x6F\x6E\x65",
+			"\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72", "\x76\x61\x6C\x75\x65", "\x75\x6E",
+			"\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64",
+			"\x79\x6F\x75\x5F\x66\x6F\x75\x6E\x64\x5F\x6D\x65", "\x70\x77",
+			"\x43\x6F\x6E\x67\x72\x61\x74\x75\x6C\x61\x74\x69\x6F\x6E\x73\x20\x43\x68\x61\x6C\x6C\x65\x6E\x67\x65\x20\x31\x20\x43\x6F\x6D\x70\x6C\x65\x74\x65\x64\x21",
+			"\x6C\x6F\x63\x61\x74\x69\x6F\x6E", "\x2E\x2E\x2F\x63\x68\x61\x6C\x6C\x65\x6E\x67\x65\x73",
+			"\x41\x63\x63\x65\x73\x73\x20\x64\x65\x6E\x69\x65\x64\x2E"
+		];
+		var coll = document[_0x82ff[1]](_0x82ff[0]);
+		var i;
+		for (i = 0; i < coll[_0x82ff[2]]; i++) {
+			coll[i][_0x82ff[12]](_0x82ff[3], function () {
+				this[_0x82ff[6]][_0x82ff[5]](_0x82ff[4]);
+				var _0x36d5x3 = this[_0x82ff[7]];
+				if (_0x36d5x3[_0x82ff[9]][_0x82ff[8]] === _0x82ff[10]) {
+					_0x36d5x3[_0x82ff[9]][_0x82ff[8]] = _0x82ff[11]
+				} else {
+					_0x36d5x3[_0x82ff[9]][_0x82ff[8]] = _0x82ff[10]
+				}
+			})
+		};
+
+		// form references the element with id #form
+		form.onsubmit = function checkform(e) {
+			console.log({e});
+			e.preventDefault();
+
+			if (document[_0x82ff[15]](_0x82ff[14])[_0x82ff[13]] == _0x82ff[16] && document[_0x82ff[15]](_0x82ff[17])[_0x82ff[
+					13]] == _0x82ff[16]) {
+					
+				window.ctf_quiz(0, `${document[_0x82ff[15]](_0x82ff[14])[_0x82ff[13]]}`).then((success) => {
+
+				});
+			} else {
+				Swal.fire({
+					title: _0x82ff[21],
+					icon: 'error'
+				});
+			}
+
+			return false;
+		}
+	</script>
+
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/jquery.scrollex.min.js"></script>
+	<script src="/assets/js/jquery.scrolly.min.js"></script>
+	<script src="/assets/js/browser.min.js"></script>
+	<script src="/assets/js/breakpoints.min.js"></script>
+	<script src="/assets/js/util.js"></script>
+	<script src="/assets/js/main.js"></script>
+	<script src="/assets/js/sweetalert2.min.js"></script>
+	<script src="/assets/js/quiz.js"></script>
+
+</body>
+
+</html>

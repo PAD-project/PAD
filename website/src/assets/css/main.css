@@ -1267,7 +1267,11 @@ body.is-preload #sidebar nav ul li{
   padding:1.35em 0;
   position:relative;
   text-decoration:none;
-  text-transform:uppercase
+  text-transform:uppercase;
+}
+
+.user-state:hover {
+	cursor: pointer;
 }
 
 .user-state p {
@@ -1302,4 +1306,31 @@ body.is-preload #sidebar nav ul li{
   position: absolute;
   right: 0;
   width: 100%;
+}
+
+.swal2-confirm {
+	height: initial;
+    letter-spacing: initial;
+    line-height: initial;
+    position: initial;
+    text-transform: initial;
+    margin-left: initial;
+}
+
+.swal-mc-button {
+	background-color: #505053;
+	width: 90%;
+	text-align: left;
+	font-weight: bold;
+	outline: 0;
+	border: 0;
+	cursor: pointer;
+	margin: 10px 0;
+
+	transition: 0.5s ease;
+}
+
+.swal-mc-button:hover {
+	background-color: #39393b;
+	transition: 0.5s ease;
 }

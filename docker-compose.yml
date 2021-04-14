@@ -8,8 +8,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8080:80
-#    volumes:
-#      - ./website/src:/app/public
+# Voor als je wilt werken aan de website haal bij regel 13 en 14 de comment weg 
+#  en zet een comment op regel 2 en 3 in de Dockerfile van de website (./website/Dockerfile)
+    volumes:
+      - ./website/src:/app/public
 
   db:
     build:
