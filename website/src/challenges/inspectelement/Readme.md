@@ -1,5 +1,5 @@
-<h2>CHALLENGE 1 (EASY):</h2>
-<h3>Inspect Element - not a save way to store your password.</h3>
+# CHALLENGE 1 (EASY):
+## Inspect Element - not a save way to store your password.
 
 In this challenge you must get the login credentials trough inspecting element. In the HTML code there is a hidden encrypted script which stores the username and password in it.
 Users need to search for a decrypt tool to decrypt the encrypt script. The hint button shows examples of decrypt tools.
