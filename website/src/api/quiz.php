@@ -93,13 +93,13 @@ function GetQuizInfo() {
         exit();
     }
 
-    $quiz = [
+    $quiz = /*[
         "challenge" => 0,
         "outro" => "What did you just do? You looked at the html code and within it you found a little piece of JavaScript which contained the username and password you needed. You couldn't just copy paste this though, because the data was obfuscated. So we used a deobfuscator to get the correct username and password.",
         "quiz_vraag" => "How should you store a password?",
         "correct_antwoord" => "Hashing",
         "antwoorden" => "The best way possible|Hardcoded|Obfuscation"
-    ]; //GetChallengeQuiz($request_challenge);
+    ];*/ GetChallengeQuiz($request_challenge);
     
     if (!$quiz) {
         http_response_code(500);
@@ -163,13 +163,13 @@ function SubmitQuizAnswer() {
         exit();
     }
 
-    $quiz = [
+    $quiz = /*[
         "challenge" => 0,
         "outro" => "What did you just do? You looked at the html code and within it you found a little piece of JavaScript which contained the username and password you needed. You couldn't just copy paste this though, because the data was obfuscated. So we used a deobfuscator to get the correct username and password.",
         "quiz_vraag" => "How should you store a password?",
         "correct_antwoord" => "Hashing",
         "antwoorden" => "The best way possible|Hardcoded|Obfuscation"
-    ]; //GetChallengeQuiz($request_challenge);
+    ];*/ GetChallengeQuiz($request_challenge);
     
     if (!$quiz) {
         http_response_code(500);
