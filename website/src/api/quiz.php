@@ -34,7 +34,7 @@ function GetChallengeQuiz($chlg_id) {
         return false;
     }
     
-    $stmt = $mysqli->prepare('SELECT * FROM `flags` WHERE `challenge`=?');
+    $stmt = $mysqli->prepare('SELECT * FROM `Quiz` WHERE `challenge`=?');
     
     if (!$stmt) {
         return false;
@@ -50,6 +50,25 @@ function GetChallengeQuiz($chlg_id) {
     }
 
     return $result;
+}
+
+function UpdateUserChallenge($uid, $challenge) {
+    $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_MAIN);
+    
+    if ($mysqli->connect_errno) {
+        return false;
+    }
+    
+    $stmt = $mysqli->prepare('UPDATE `users` SET `challenge`=? WHERE `id`=?');
+    
+    if (!$stmt) {
+        return false;
+    }
+    
+    $stmt->bind_param('dd', $challenge, $uid);
+    $stmt->execute();
+
+    return true;
 }
 
 function GetQuizInfo() {
@@ -185,7 +204,8 @@ function SubmitQuizAnswer() {
         exit();
     }
 
-    // TODO: Increase challenge index in database
+    // UPDATE user challenge counter
+    UpdateUserChallenge($user_info['user_id'], $request_challenge + 1);
 
     http_response_code(200);
     echo json_encode(["success" => true]);

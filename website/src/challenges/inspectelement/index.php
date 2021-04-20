@@ -1,3 +1,11 @@
+<?php
+
+require __DIR__ . '/../../api/quiz_entry.php';
+
+EnforceChallengeAccess(0);
+
+?>
+
 <html>
 
 <head>

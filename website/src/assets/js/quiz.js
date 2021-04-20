@@ -2,10 +2,50 @@ const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 window.ctf_quiz = async (challenge_id, challenge_flag) => {
     const quiz_info_res = await fetch(`/api/quiz.php?id=${challenge_id}&flag=${challenge_flag}`);
+
+    if (!quiz_info_res.ok) {
+        if (quiz_info_res.status === 401) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Session expired',
+                text: 'Your session has expired, please login agani.',
+                showConfirmButton: false,
+                allowEscapeKey: false,
+                allowOutsideClick: false,
+                timer: 3000,
+                timerProgressBar: true,
+            }).then(() => {
+                window.location.href='/login';
+            });
+
+            return;
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Unexpected error',
+                html: `Something went wrong, and we're not sure what is was.<br/><code>${quiz_info_res.status}</code>`,
+                confirmButtonText: 'Login'
+            }).then(() => {
+                window.location.href='/login';
+            });
+
+            return;
+        }
+    }
+
     const quiz_info = await quiz_info_res.json();
 
     if (!quiz_info.success) {
-        window.last_ctf_error = quiz_info.error;
+        Swal.fire({
+            icon: 'error',
+            title: 'Flag submit failed',
+            text: (
+                quiz_info.error === 'ERR_CHALLENGE_PERM_DENIED' ?
+                'You do not have access to this challenge yet.' :
+                'The flag submitted is invalid'
+            )
+        });
+
         return false;
     }
 

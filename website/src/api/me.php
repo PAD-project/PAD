@@ -27,13 +27,14 @@ function GetUserInfo() {
     $result = $stmt->get_result()->fetch_assoc();
     
     if (!$result || $result['id'] !== $_SESSION['uid']) {
-        return [false, 404];
+        return [false, 401];
     }
     
     http_response_code(200);
     
     return [true, [
         "username" => $result['username'],
+        "user_id" => $result['id'],
         "challenge_idx" => $result['challenge']
     ]];
 }
