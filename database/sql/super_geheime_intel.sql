@@ -52,6 +52,6 @@ INSERT INTO `flags` (`challenge`, `flag`) VALUES
 (0, 'you_found_me'),
 (1, 'dP5D3$N5xtNsFfddALm7MGGgJJ5TpPtheq@yKSXL'),
 (2, 'f4EzyhsY76z&hEBMFC8Htex9p5Rm$#P9j@Tr76cb'),
-(3, 'N5oMgMYA$t?kYPkx6afCCii7?6snMnH6NrRc7TNa);
+(3, 'N5oMgMYA$t?kYPkx6afCCii7?6snMnH6NrRc7TNa');
 
 -- 2021-03-25 14:14:23
