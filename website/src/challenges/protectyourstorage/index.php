@@ -3,8 +3,8 @@
 		<title>Masters of Deception</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
-		<link rel="icon" href="../assets/images/vendetta.png" type="image" sizes="16x16">
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="icon" href="/assets/images/vendetta.png" type="image" sizes="16x16">
 	</head>
 	<body class="is-preload">
 
@@ -12,7 +12,7 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="../challenges">Go Back</a></li>
+							<li><a href="/challenges">Go Back</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -70,7 +70,7 @@
 					if (document.getElementById('un').value == 'harry_hond' && document.getElementById('pw').value == 'woef_woef') {
 						alert('Congratulations Protect your storage Challenge Completed!');
 						setTimeout(function () {
-							window.location = '../challenges'
+							window.location = '/challenges'
 						})
 					} else {
 						alert('Wrong Combination')
@@ -78,13 +78,13 @@
 				}
 			</script>
 
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
 
 
 	</body>

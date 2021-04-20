@@ -3,8 +3,8 @@
 		<title>Masters of Deception</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
-		<link rel="icon" href="../assets/images/vendetta.png" type="image" sizes="16x16">
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="icon" href="/assets/images/vendetta.png" type="image" sizes="16x16">
 	</head>
 	<body class="is-preload">
 
@@ -12,7 +12,7 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="../challenges">Go Back</a></li>
+							<li><a href="/challenges">Go Back</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -66,13 +66,13 @@
 		   }
 		 	</script>
 
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
 
 	</body>
 </html>
@@ -91,4 +91,4 @@
    }
 ?>
 
-<!-- .\hydra.exe -V -t 25 -f -l admin -x 4:6:a -s 8080 localhost http-post-form "/bruteforce2/bruteforce2.php:username=admin&password=^PASS^&submit=Login:Wrong Password"
+<!-- .\hydra.exe -V -t 25 -f -l admin -x 4:6:a -s 8080 localhost http-post-form "challenges/dontbelazy/index.php:username=admin&password=^PASS^&submit=Login:Wrong Password"
