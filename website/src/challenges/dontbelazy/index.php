@@ -122,4 +122,4 @@ if (isset($_POST['submit'])) {
 
 </html>
 
-<!-- .\hydra.exe -V -t 25 -f -l admin -x 4:6:a -s 8080 localhost http-post-form "/bruteforce2/bruteforce2.php:username=admin&password=^PASS^&submit=Login:Wrong Password"
+<!-- .\hydra.exe -V -t 25 -f -l admin -x 4:6:a -s 8080 localhost http-post-form "challenges/dontbelazy/index.php:username=admin&password=^PASS^&submit=Login:Wrong Password"
