@@ -64,7 +64,7 @@ if (isset($_POST['submit'])) {
 				</button>
 				<div class="content">
 					<p4>1. Try using nmap port scan<br></p4>
-					<p5>2. It can't hurt the check the source once again, can it?<br></p5>
+					<p5>2. It can't hurt to check the source once again, can it?<br></p5>
 					<p6>3. What kind of hashes exist? Maybe you could use that...</p6>
 				</div>
 			</div>
@@ -99,9 +99,7 @@ if (isset($_POST['submit'])) {
 		var complete = document.getElementsByClassName("collapsible")[0];
 		
 		complete.addEventListener('click', () => {
-			window.ctf_quiz(3, encodeURIComponent(`N5oMgMYA$t?kYPkx6afCCii7?6snMnH6NrRc7TNa`)).then((success) => {
-
-			});
+			window.ctf_quiz(3, encodeURIComponent(`N5oMgMYA$t?kYPkx6afCCii7?6snMnH6NrRc7TNa`)).then((success) => {});
 		});
 	</script>
 	<?php } else { ?>

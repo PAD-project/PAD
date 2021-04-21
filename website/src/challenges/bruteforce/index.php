@@ -13,6 +13,10 @@ if (isset($_POST['submit'])) {
 
 	$challenge_complete = ($un === 'admin' && $pw === 'test');
 	$incorrect = !$challenge_complete;
+
+	if ($incorrect) {
+		http_response_code(403);
+	}
 }
 ?>
 
@@ -68,7 +72,7 @@ if (isset($_POST['submit'])) {
 			</div>
 			<form method="POST">
 				<? if ($incorrect) { ?>
-				<p5 style="color: red; margin-left: 110px;">Username/Password combination invalid</p5>
+				<p5 style="color: red; margin-left: 110px;">Wrong Password</p5>
 				<? } ?>
 				<div class="input_bar">
 					<input type="text" name="username" id="un" placeholder="Username" />

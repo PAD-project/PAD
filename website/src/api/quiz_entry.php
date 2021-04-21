@@ -38,8 +38,10 @@ function EnforceChallengeAccess($challenge) {
 
     if (!$user_info[0]) {
         if ($user_info[1] === 401) {
+			http_response_code(401);
             ShowError('You must be logged in to start this challenge');
         } else {
+			http_response_code(500);
             ShowError('An unexpected error has occured (' . $user_info[1] . ')');
         }
 
@@ -49,6 +51,7 @@ function EnforceChallengeAccess($challenge) {
     $user_info = $user_info[1];
 
     if ($user_info['challenge_idx'] < $challenge) {
+		http_response_code(401);
         ShowError('You must finish challenge ' . ($challenge) . ' first before you can start this one');
         exit();
     }
