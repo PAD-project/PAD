@@ -13,6 +13,10 @@ if (isset($_POST['submit'])) {
 
 	$challenge_complete = ($un === 'admin' && $pw === 'abcd');
 	$incorrect = !$challenge_complete;
+
+	if ($incorrect) {
+		http_response_code(403);
+	}
 }
 ?>
 
@@ -122,4 +126,4 @@ if (isset($_POST['submit'])) {
 
 </html>
 
-<!-- .\hydra.exe -V -t 25 -f -l admin -x 4:6:a -s 8080 localhost http-post-form "challenges/dontbelazy/index.php:username=admin&password=^PASS^&submit=Login:Wrong Password"
+<!-- .\hydra.exe -V -t 25 -f -l admin -x 4:6:a -s 8080 localhost http-post-form "/challenges/dontbelazy/:username=admin&password=^PASS^&submit=Login:S=You found the correct:H=Cookie: PHPSESSID=<?= $_COOKIE['PHPSESSID'] ?>" -->

