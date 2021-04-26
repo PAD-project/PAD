@@ -204,8 +204,10 @@ function SubmitQuizAnswer() {
         exit();
     }
 
-    // UPDATE user challenge counter
-    UpdateUserChallenge($user_info['user_id'], $request_challenge + 1);
+    // UPDATE user challenge counter if user has not finished it before
+    if ($user_info['challenge_idx'] < $request_challenge + 1) {
+        UpdateUserChallenge($user_info['user_id'], $request_challenge + 1);
+    }
 
     http_response_code(200);
     echo json_encode(["success" => true]);
