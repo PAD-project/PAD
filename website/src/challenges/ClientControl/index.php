@@ -2,7 +2,7 @@
 
 require __DIR__ . '/../../api/quiz_entry.php';
 
-EnforceChallengeAccess(3);
+EnforceChallengeAccess(4);
 
 $challenge_complete = false;
 $incorrect = false;
@@ -11,8 +11,12 @@ if (isset($_POST['submit'])) {
 	$un=$_POST['username'];
 	$pw=$_POST['password'];
 
-	$challenge_complete = ($un === 'harry_hond' && $pw === 'woef_woef');
+	$challenge_complete = ($un === 'SP09_4008_5874_2391' && $pw === 'quatrocientos_quatro');
 	$incorrect = !$challenge_complete;
+
+	if ($incorrect) {
+		http_response_code(403);
+	}
 }
 ?>
 
@@ -43,51 +47,39 @@ if (isset($_POST['submit'])) {
 	<div id="wrapper">
 		<div class="video-background">
 			<div class="video-foreground">
-				<iframe src="https://www.youtube.com/embed/qELSSAspRDI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1"
-					frameborder="0" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/qELSSAspRDI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"
+					frameborder="0" allowfullscreen muted mute></iframe>
 			</div>
 		</div>
 
 		<!-- Intro -->
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
-				<h2>Protect your storage</h2>
+				<h2>Client Control</h2>
 				<p4>
 					<?php if ($challenge_complete) { ?>
 					You found the correct username and password.
 					<?php } else { ?>
-					Try to find the correct login credentials in the database.
+					Log into Fuego Banks and find out what mister Narcos' bank ballance is. His wife wants to run away.
 					<?php } ?>
 				</p4>
 				<button type="button" class="collapsible">
-					<?= $challenge_complete ? "Complete challenge" : "Hint" ?>
+					<?= $challenge_complete ? "Complete challenge" : "Start here" ?>
 				</button>
 				<div class="content">
-					<p4>1. Try using nmap port scan<br></p4>
-					<p5>2. It can't hurt to check the source once again, can it?<br></p5>
-					<p6>3. What kind of hashes exist? Maybe you could use that...</p6>
+					<p4><a href="./FuegoBanks/" target="_blank">Fuego Banks</a></p4>
+					<br>
+					<p4>Inspect element</p4>
+					<br>
+					<p4>Obfuscation is being used, what have we learned in challenge 1?</p4>
+					<br>
+					<p4>Telebancos por a que?</p4>
 				</div>
 			</div>
 			<form method="post" action="">
-				<? if ($incorrect) { ?>
-				<p5 style="color: red; margin-left: 110px;">Username/Password combination invalid</p5>
-				<? } ?>
 				<div class="input_bar">
-					<!-- Voor Dhr. bende,
-
-						Ik heb wat gesleuteld aan de database en als u kunt inloggen om feedback
-						 te geven zou ik dat zeer op prijs stellen.
-
-						Gebruikersnaam: beeste_bende
-						    Wachtwoord: ikhouvantennisballen 
-
-						U hoeft zich trouwens geen zorgen te maken dat andere gebruikers gaan inloggen,
-						 ik heb de database alleen toegankelijk gemaakt via een andere ingang.
-					
-						Mvg, ?
-					-->
-					<input type="text" name="username" id="un" placeholder="Username" />
-					<input type="password" name="password" id="pw" placeholder="Password" required />
+					<input type="text" name="username" id="un" placeholder="Bank account number" />
+					<input type="password" name="password" id="pw" placeholder="Balance" required />
 				</div>
 				<br />
 				<input type="submit" name="submit" value="Login" class="primary" />
@@ -99,7 +91,9 @@ if (isset($_POST['submit'])) {
 		var complete = document.getElementsByClassName("collapsible")[0];
 		
 		complete.addEventListener('click', () => {
-			window.ctf_quiz(3, encodeURIComponent(`N5oMgMYA$t?kYPkx6afCCii7?6snMnH6NrRc7TNa`)).then((success) => {});
+			window.ctf_quiz(4, encodeURIComponent(`9p97A!54zA89yDhKQ$@!$PXFid?QaqD&8x?iBtqB`)).then((success) => {
+
+			});
 		});
 	</script>
 	<?php } else { ?>
@@ -130,6 +124,8 @@ if (isset($_POST['submit'])) {
 	<script src="/assets/js/main.js"></script>
 	<script src="/assets/js/sweetalert2.min.js"></script>
 	<script src="/assets/js/quiz.js"></script>
+
+
 </body>
 
 </html>
