@@ -34,7 +34,7 @@ EnforceChallengeAccess(0);
 		<div class="video-background">
 			<div class="video-foreground">
 				<iframe
-					src="https://www.youtube.com/embed/qELSSAspRDI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"
+					src="https://www.youtube.com/embed/IZdcl1685d0?playlist=IZdcl1685d0&loop=1;rel=0?controls=0&showinfo=0&autoplay=1&mute=1"
 					frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>

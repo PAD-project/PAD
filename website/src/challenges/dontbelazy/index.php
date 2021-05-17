@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
 		<div class="video-background">
 			<div class="video-foreground">
 				<iframe
-					src="https://www.youtube.com/embed/-MKapbz0GIo?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=-MKapbz0GIo&mute=1"
+					src="https://www.youtube.com/embed/-MKapbz0GIo?playlist=-MKapbz0GIo&loop=1;rel=0?controls=0?&showinfo=0&autoplay=1&mute=1"
 					frameborder="0" allowfullscreen loop></iframe>
 			</div>
 		</div>
@@ -67,7 +67,7 @@ if (isset($_POST['submit'])) {
 					<?= $challenge_complete ? "Complete challenge" : "Hint" ?>
 				</button>
 				<div class="content">
-					<p4>Use a brute force attack <a href="https://github.com/scrolls5/HYDRA">HYDRA</a></p4>
+					<p4>Use a generated brute force attack on Linux system <a href="https://github.com/vanhauser-thc/thc-hydra">HYDRA</a></p4>
 				</div>
 			</div>
 			<form method="POST">

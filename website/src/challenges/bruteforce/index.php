@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
 		<div class="video-background">
 			<div class="video-foreground">
 				<iframe
-					src="https://www.youtube.com/embed/-MKapbz0GIo?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=-MKapbz0GIo&mute=1"
+					src="https://www.youtube.com/embed/d3ZVcvmsh48?playlist=d3ZVcvmsh48&loop=1;rel=0&controls=0&mute=1&autoplay=1&showinfo=0"
 					frameborder="0" allowfullscreen loop></iframe>
 			</div>
 		</div>
@@ -67,7 +67,7 @@ if (isset($_POST['submit'])) {
 					<?= $challenge_complete ? "Complete challenge" : "Hint" ?>
 				</button>
 				<div class="content">
-					<p4>Use a brute force attack <a href="https://github.com/scrolls5/HYDRA">HYDRA</a></p4>
+					<p4>Use a dictionary brute force attack on a Windows/Linux system <a href="https://github.com/scrolls5/HYDRA">HYDRA</a></p4>
 				</div>
 			</div>
 			<form method="POST">
