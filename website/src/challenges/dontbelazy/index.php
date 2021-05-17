@@ -67,7 +67,7 @@ if (isset($_POST['submit'])) {
 					<?= $challenge_complete ? "Complete challenge" : "Hint" ?>
 				</button>
 				<div class="content">
-					<p4>Use a brute force attack <a href="https://github.com/scrolls5/HYDRA">HYDRA</a></p4>
+					<p4>Use a generated brute force attack on Linux system <a href="https://github.com/vanhauser-thc/thc-hydra">HYDRA</a></p4>
 				</div>
 			</div>
 			<form method="POST">
