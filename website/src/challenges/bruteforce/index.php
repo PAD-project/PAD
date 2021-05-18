@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
 	$un=$_POST['username'];
 	$pw=$_POST['password'];
 
-	$challenge_complete = ($un === 'admin' && $pw === 'test');
+	$challenge_complete = ($un === 'admin' && $pw === 'gameover');
 	$incorrect = !$challenge_complete;
 
 	if ($incorrect) {
