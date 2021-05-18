@@ -2,7 +2,7 @@
 
 require __DIR__ . '/../../api/quiz_entry.php';
 
-EnforceChallengeAccess(1);
+EnforceChallengeAccess(2);
 
 $challenge_complete = false;
 $incorrect = false;
