@@ -1,6 +1,14 @@
-FROM php:8.0-apache
-COPY src/ /app/public
-RUN chown -R www-data:www-data /app/public
-COPY conf/vhost.conf /etc/apache2/sites-available/000-default.conf
-RUN a2enmod rewrite
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+FROM ubuntu:20.04
+
+RUN apt-get update -y && \
+    apt-get install -y python3-pip python3-dev libmariadb-dev
+
+COPY ./src/requirements.txt /app/requirements.txt
+
+WORKDIR /app
+RUN pip install -r requirements.txt
+
+COPY ./src/ /app
+
+ENTRYPOINT [ "python3" ]
+CMD [ "app.py" ]

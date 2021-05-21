@@ -1,0 +1,6 @@
+#!/bin/sh
+docker stop flask-pad
+docker rm flask-pad
+docker rmi flask-app
+docker build -t flask-app .
+docker run -d -p 8080:80 --name flask-pad flask-app
