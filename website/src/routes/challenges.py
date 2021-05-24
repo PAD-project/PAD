@@ -106,3 +106,26 @@ def init_app(app):
                 status = 403
 
         return render_template('challenges/dontbelazy.html', challenge_complete=challenge_complete, incorrect=incorrect, session=request.cookies.get('session')), status
+
+    # Protect Your Storage Challenge
+    @app.route('/challenges/protectyourstorage', methods=['GET', 'POST'])
+    def pys_challenge():
+        (success, error) = enforce_challenge_access(4)
+        if not success:
+            return error, 401
+
+        challenge_complete = False
+        incorrect = False
+        status = 200
+
+        if request.method == 'POST':
+            username = request.form['username']
+            password = request.form['password']
+
+            challenge_complete = (username == 'harry_hond' and password == 'woef_woef')
+            incorrect = not challenge_complete
+
+            if incorrect:
+                status = 403
+
+        return render_template('challenges/protectyourstorage.html', challenge_complete=challenge_complete, incorrect=incorrect), status
